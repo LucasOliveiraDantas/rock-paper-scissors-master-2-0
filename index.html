@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+<!--
+  Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again
+-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--main-->
+  <main class="main" id= "main">
+
+    <!--container main -->
+    <div class="container-main">
+
+      <!--container game -->
+      <div class="container-game">
+
+        <!-- header game -->
+        <div class="header-game">
+          <!--image logo game -->
+          <img class="img-logo-game" src="images/logo-bonus.svg" alt="logo game">
+
+          <!--header score -->
+          <div class="header-score">
+
+            <!--label score -->
+            <label class="label-score">SCORE</label>
+
+            <!--value score -->
+            <input id="value-score" class="input-score"type="text" name="score" value="0" disabled="disabled">
+          </div>
+        </div>
+
+        <!--area game -->
+        <div class="area-game">
+
+          <!--button select game -->
+          <button id="item-game-1" class="item-game" onclick="sciPlay()">
+            <img src="images/icon-scissors.svg" alt="icon scissors">
+          </button>
+
+          <button id="item-game-2" class="item-game" onclick="paperPlay()">
+            <img src="images/icon-paper.svg" alt="icon paper">
+          </button>
+
+          <button id="item-game-3" class="item-game" onclick="rockPlay()">
+            <img src="images/icon-rock.svg" alt="icon rock">
+          </button>
+
+          <button id="item-game-4" class="item-game" onclick="lizardPlay()">
+            <img src="images/icon-lizard.svg" alt="icon lizard">
+          </button>
+
+          <button id="item-game-5" class="item-game" onclick="spockPlay()">
+            <img src="images/icon-spock.svg" alt="icon spock">
+          </button>
+
+        </div>
+
+      </div>
+
+      <!--container result -->
+      <div class="container-game-result">
+        <!--itemns game -->
+        <div class="game-result">
+
+          <div class="item-result">
+            <button id="game-result-1" class="item-game-result item-game-2" >
+              <img src="images/icon-scissors.svg" alt="icon object result" id="img-obj1">
+            </button>
+
+            <p class="label-item-result">You Picked</p>
+
+          </div>
+
+          <div class="item-result">
+            <button id="game-result-2" class="item-game-result item-game-3">
+              <img src="images/icon-paper.svg" alt="icon object result" id="img-obj2">
+            </button>
+
+            <p class="label-item-result">The House Picked</p>
+
+          </div>
+
+        </div>
+
+        <div class="area-play-again">
+          
+          <label class="label-result">YOU WIN</label>
+       
+          <button onclick="playAgain()" id="btn-play-again">PLAY AGAIN</button>
+         
+
+
+        </div>
+        
+          
+
+          
+      </div>
+
+
+
+
+
+
+      <!-- area rules game-->
+      <div class="area-rules">
+
+        <button onclick="rules()" class="btn-rules">RULES</button>
+
+        <!--rules-->
+        <div class="rules">
+
+          <div class="nav-rules">
+
+            <p class="label-rules">RULES</p>
+
+            <button onclick="rulesOff()" class="btn-rules-close">
+              <img src="images/icon-close.svg" alt="icon close">
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+     
+      
+      
+
+
+    </div>
+
+
+
+      
+
+
+  </main>
+
+  
+  <div class="attribution" role="contentinfo">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

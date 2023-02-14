@@ -1,0 +1,93 @@
+
+
+class GameAltr{
+
+	constructor(obj1){
+
+		this.obj1 = document.getElementById("obj1");
+		this.obj2 = document.getElementById("obj2");
+		this.obj3 = document.getElementById("obj3");
+
+		this.playHouse = Math.floor(Math.random() * 4)
+	}	
+
+	obj1(){
+
+		document.getElementById('img-obj1').src="images/icon-scissors.svg"
+		 
+		//tesoura--------------------------------------------tesoura//
+
+		 	if (this.playHouse == 1){
+		 		console.log('empate')
+
+
+
+		 	}else if(this.playHouse == 2){
+		 		console.log('voce ganhou')
+
+		 	}else if(this.playHouse == 3){
+		 		console.log('voce perdeu')
+
+		 	}		 	
+	}
+
+	obj2(){
+
+		document.getElementById('img-obj1').src="images/icon-paper.svg"
+
+
+		if (playHouse == 1){
+		 		console.log('voce perdeu')
+
+		 }else if(playHouse == 2){
+		 	console.log('empate')
+
+
+		 }else if(playHouse == 3){
+		 	console.log('voce ganhou')
+
+
+		 }
+
+
+	}
+	obj3(){
+
+		document.getElementById('img-obj1').src="images/icon-rock.svg"
+
+
+		if (playHouse == 1){
+		 	console.log('voce ganhou')
+
+		 }else if(playHouse == 2){
+		 	console.log('voce perdeu')
+
+
+		 }else if(playHouse == 3){
+		 	console.log('empate')
+ 
+		}
+
+
+
+	}
+}	
+
+let gameAltr = new GameAltr()
+
+
+
+function obj1Select(){
+
+	gameAltr.obj1()
+}
+
+function obj2Select(){
+
+	gameAltr.obj1()
+}
+
+function obj3Select(){
+
+	gameAltr.obj3()
+}
