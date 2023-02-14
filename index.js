@@ -31,6 +31,8 @@ class GameAltr{
 
 	sci(){
 
+
+		
 		
 
 		console.log(this.playHouse)
@@ -48,12 +50,12 @@ class GameAltr{
 		}else if(this.playHouse == 2 || this.playHouse == 4){
 
 		 	console.log('voce ganhou')
-
+		 	
 		 	
 		 	let score = document.getElementById('value-score')
 
 			score.value = this.valueScore
-
+			
 
 		 	this.labelResult.innerHTML = "YOU WIN"
 

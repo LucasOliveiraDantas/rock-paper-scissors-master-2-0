@@ -60,6 +60,9 @@ button{
 /*/// header game ///////////*/
 .header-game{
 
+	max-width: 550px;
+	max-height: 121.59px;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -115,6 +118,8 @@ button{
 
 /*///////////////////////////// AREA GAME //////////*/
 .area-game{
+
+	
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
@@ -389,7 +394,7 @@ button{
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 600px) {
 
 	/*///////////////container game//////*/
 	.container-game{
@@ -398,6 +403,8 @@ button{
 		align-items: center;
 
 		margin: 2.2rem;
+
+		margin-bottom: 0rem;
 
 	}
 	/*///////////////header game//////*/
@@ -519,9 +526,10 @@ button{
 
 	.area-rules{
 		display: flex;
-		justify-content: end;
-		margin: -3rem 0rem 1rem 0rem;
+		justify-content: center;
+		margin-bottom: 1rem; 
 		padding: 0rem 1rem;
+
 	}
 	.rules.on{
 
@@ -548,7 +556,11 @@ button{
 	}
 	.nav-rules{
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
+		margin-top: 0rem;
+		height: 32px;
+
 	}
 	.label-rules{
 		font-size: 24px;
