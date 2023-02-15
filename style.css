@@ -39,6 +39,7 @@ button{
 }
 
 
+
 /*////////// container main ///////////*/
 
 .container-main{
@@ -124,7 +125,7 @@ button{
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	column-gap: 2rem;
-
+	
 	margin-top: 5.8rem;
 
 
@@ -536,7 +537,7 @@ button{
 		display: block;
 		position: absolute;
 		top: 7.5rem;
-		left: 38.5%;
+		left: auto;
 
 		background-color: white;
 		width: 310px;
@@ -579,7 +580,7 @@ button{
 	.game-result{
 		display: flex;
 		justify-content: center;
-		column-gap: 18rem;
+		column-gap: 18rem ;
 
 		margin-top: 1rem;
 	}
@@ -589,6 +590,9 @@ button{
 		row-gap: 3rem;
 	}
 	.item-game-result{
+
+		
+
 		width: 220px;
 		height: 220px;
 		border-radius: 50%;
